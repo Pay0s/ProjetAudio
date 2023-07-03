@@ -12,3 +12,23 @@ post_traitement_data:
     type: pandas.CSVDataSet
     filepath: data/02_intermediate/tonal_exam.csv
     layer: intermediate
+
+train_data:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/tonal_exam_train_data.csv
+    layer: primary
+
+train_label:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/tonal_exam_train_label.csv
+    layer: primary
+
+test_data:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/tonal_exam_test_data.csv
+    layer: primary
+
+test_label:
+    type: pandas.CSVDataSet
+    filepath: data/03_primary/tonal_exam_test_label.csv
+    layer: primary

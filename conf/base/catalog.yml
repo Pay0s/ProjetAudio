@@ -2,3 +2,13 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/data/data_catalog.html
+
+source_datas:
+    type: pandas.CSVDataSet
+    filepath: data/01_raw/tonal_exams.csv
+    layer: raw
+
+post_traitement_data:
+    type: pandas.CSVDataSet
+    filepath: data/02_intermediate/tonal_exam.csv
+    layer: intermediate

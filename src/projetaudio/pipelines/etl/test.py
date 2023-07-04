@@ -4,19 +4,29 @@ import pytest
 
 from .nodes import preprocess, splitTrainTest
 
-# Créer un DataFrame avec des entiers aléatoires
-df = pd.DataFrame(np.random.randint(0, 100, size=(5, 3)), columns=['Colonne1', 'Colonne2', 'Colonne3'])
+data = {
+    'Colonne1': [1, 2, 23],
+    'Colonne2': [2, 18, np.nan],
+    'Colonne3': [3, np.nan, np.nan]
+}
 
-def df_parfait(df):
+# Créer le DataFrame à partir du dictionnaire
+df_test = pd.DataFrame(data)
 
-    dfreturn = preprocess(df)
-    return dfreturn
+data = {
+    'Colonne1': [1],
+    'Colonne2': [2],
+    'Colonne3': [3]
+}
+
+# Créer le DataFrame à partir du dictionnaire
+df_corriger = pd.DataFrame(data)
 
 def test_answer():
 
-    df2 = df_parfait(df)
+    df2 = preprocess(df_test)
 
-    # Vérifier si les deux DataFrames sont identiques
-    are_equal = df.equals(df2)
+    # Vérifie si les deux DataFrames sont identiques
+    are_equal = df2.equals(df_corriger.astype(int))
 
-    assert are_equal == False
+    assert are_equal == True

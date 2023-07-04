@@ -4,25 +4,26 @@ import pytest
 
 from .nodes import preprocess, splitTrainTest
 
-data = {
+# Permet de savoir si nous supprimons bien les lignes qui n'ont pas valeur
+def test_answer():
+
+    data = {
     'Colonne1': [1, 2, 23],
     'Colonne2': [2, 18, np.nan],
     'Colonne3': [3, np.nan, np.nan]
-}
+    }
 
-# Créer le DataFrame à partir du dictionnaire
-df_test = pd.DataFrame(data)
+    # Créer le DataFrame à partir du dictionnaire
+    df_test = pd.DataFrame(data)
 
-data = {
-    'Colonne1': [1],
-    'Colonne2': [2],
-    'Colonne3': [3]
-}
+    data = {
+        'Colonne1': [1],
+        'Colonne2': [2],
+        'Colonne3': [3]
+    }
 
-# Créer le DataFrame à partir du dictionnaire
-df_corriger = pd.DataFrame(data)
-
-def test_answer():
+    # Créer le DataFrame à partir du dictionnaire
+    df_corriger = pd.DataFrame(data)
 
     df2 = preprocess(df_test)
 

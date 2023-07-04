@@ -19,5 +19,5 @@ def create_pipeline(**kwargs) -> Pipeline:
                 inputs="post_traitement_data",
                 outputs=["train_data", "test_data", "train_label", "test_label"],
                 name="split_data"
-                )
+                ),
             ])

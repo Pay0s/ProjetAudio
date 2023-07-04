@@ -20,11 +20,11 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
 
             for row_index in empty_row_indices:
                 print(f"Erreur : La colonne '{col}' est vide dans la ligne {row_index}.")
-                print("Toutes les ligne ce dessus on été supprimé")
-
+            
+        print("Toutes les ligne ce dessus on été supprimé")
         df = df.dropna()
-
-        return df
+        
+        return df.astype(int)
 
     else:
 

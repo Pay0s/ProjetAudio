@@ -7,20 +7,33 @@ from sklearn.model_selection import train_test_split
 
 
 # Créer un DataFrame avec des entiers aléatoires
-df = pd.DataFrame(np.random.randint(0, 100, size=(5, 3)), columns=['Colonne1', 'Colonne2', 'Colonne3'])
 df_split = pd.DataFrame(np.random.randint(0, 100, size=(5, 3)), columns=['after_1', 'before', 'after_2'])
 
-def df_parfait(df):
-
-    dfreturn = preprocess(df)
-    return dfreturn
 
 def test_answer():
 
-    df2 = df_parfait(df)
+    data = {
+    'Colonne1': [1, 2, 23],
+    'Colonne2': [2, 18, np.nan],
+    'Colonne3': [3, np.nan, np.nan]
+    }
 
-    # Vérifier si les deux DataFrames sont identiques
-    are_equal = df.equals(df2)
+    # Créer le DataFrame à partir du dictionnaire
+    df_test = pd.DataFrame(data)
+
+    data = {
+        'Colonne1': [1],
+        'Colonne2': [2],
+        'Colonne3': [3]
+    }
+
+    # Créer le DataFrame à partir du dictionnaire
+    df_corriger = pd.DataFrame(data)
+
+    df2 = preprocess(df_test)
+
+    # Vérifie si les deux DataFrames sont identiques
+    are_equal = df2.equals(df_corriger.astype(int))
 
     assert are_equal == True
 
@@ -58,3 +71,4 @@ def test_dataframe_creation():
 
     
 
+    

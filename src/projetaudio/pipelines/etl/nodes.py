@@ -5,6 +5,11 @@ generated using Kedro 0.18.10
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
+from kedro.extras.datasets.yaml import YAMLDataSet
+
+import matplotlib.pyplot as plt
+ 
+from sklearn.preprocessing import MinMaxScaler
 
 def preprocess(df: pd.DataFrame) -> pd.DataFrame:
 
@@ -32,6 +37,28 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
 
         return df
 
+def normalize(df: pd.DataFrame) -> pd.DataFrame:
+
+    parameters_dataset = YAMLDataSet(filepath='conf/base/parameters.yml')
+
+    # Calculer les valeurs minimales et maximales du DataFrame entier
+    min_value = df.min().min()
+    max_value = df.max().max()  ##SAUVEGARDER LES 2 VALEURS
+
+    variables = {
+    'min_value': min_value,
+    'max_value': max_value,
+    }
+
+    # Sauvegardez les variables dans le fichier parameters.yml
+    parameters_dataset.save(variables)
+
+    # Appliquer la formule de normalisation à chaque cellule du DataFrame
+    normalized_df = (df - min_value) / (max_value - min_value)
+
+    return normalized_df
+
+
 def splitTrainTest (df: pd.DataFrame) -> pd.DataFrame:
 
     # Séparation des données et des étiquettes
@@ -50,3 +77,4 @@ def splitTrainTest (df: pd.DataFrame) -> pd.DataFrame:
     test_df = pd.concat([data_test, label_test], axis=1)
 
     return data_train, data_test, train_df, test_df
+

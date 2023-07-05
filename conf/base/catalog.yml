@@ -13,6 +13,11 @@ post_traitement_data:
     filepath: data/02_intermediate/tonal_exam.csv
     layer: intermediate
 
+post_normalize_data:
+    type: pandas.CSVDataSet
+    filepath: data/02_intermediate/tonal_exam_standard.csv
+    layer: intermediate
+
 train_data:
     type: pandas.CSVDataSet
     filepath: data/03_primary/tonal_exam_train_data.csv

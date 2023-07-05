@@ -14,8 +14,8 @@ def test_answer():
 
     data = {
     'Colonne1': [1, 2, 23],
-    'Colonne2': [2, 18, np.nan],
-    'Colonne3': [3, np.nan, np.nan]
+    'Colonne2': [2, 18, "Hugo"],
+    'Colonne3': [3, np.nan, 37]
     }
 
     # Créer le DataFrame à partir du dictionnaire
@@ -36,7 +36,6 @@ def test_answer():
     are_equal = df2.equals(df_corriger.astype(int))
 
     assert are_equal == True
-
 
 def test_after():
 
@@ -65,10 +64,3 @@ def test_dataframe_creation():
     expected_test_shape = (1, 2)  # Attendu : 1 ligne, 2 colonnes
     assert data_train.shape == expected_train_shape
     assert data_test.shape == expected_test_shape
-    
-        
-        
-
-    
-
-    

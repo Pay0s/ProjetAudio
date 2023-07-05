@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/f8edfd05860c4b5db55240c2570975a1/artifacts
+end_time: 1688482711095
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f8edfd05860c4b5db55240c2570975a1
+run_name: peaceful-ram-138
+run_uuid: f8edfd05860c4b5db55240c2570975a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688482709393
+status: 4
+tags: []
+user_id: Utilisateur

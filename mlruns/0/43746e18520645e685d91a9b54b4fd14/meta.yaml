@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/43746e18520645e685d91a9b54b4fd14/artifacts
+end_time: 1688483657521
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 43746e18520645e685d91a9b54b4fd14
+run_name: selective-pug-253
+run_uuid: 43746e18520645e685d91a9b54b4fd14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688483655889
+status: 4
+tags: []
+user_id: Utilisateur

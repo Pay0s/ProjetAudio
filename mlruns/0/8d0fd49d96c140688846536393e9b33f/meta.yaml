@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8d0fd49d96c140688846536393e9b33f/artifacts
+end_time: 1688480100879
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8d0fd49d96c140688846536393e9b33f
+run_name: bouncy-fox-422
+run_uuid: 8d0fd49d96c140688846536393e9b33f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688480099210
+status: 4
+tags: []
+user_id: Utilisateur

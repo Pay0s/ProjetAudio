@@ -28,7 +28,16 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
             
         print("Toutes les ligne ce dessus on été supprimé")
         df = df.dropna()
-        
+
+        # Vérifiez si chaque cellule est de type numérique
+        is_numeric = df.applymap(lambda x: isinstance(x, (int, float, np.number)))
+
+        # Supprimez les lignes contenant des valeurs non numériques
+        df = df[is_numeric.all(axis=1)]
+
+        # Réinitialisez les index du DataFrame
+        df = df.reset_index(drop=True)
+
         return df.astype(int)
 
     else:
@@ -76,5 +85,9 @@ def splitTrainTest (df: pd.DataFrame) -> pd.DataFrame:
     train_df = pd.concat([data_train, label_train], axis=1)
     test_df = pd.concat([data_test, label_test], axis=1)
 
+<<<<<<< HEAD
     return data_train, data_test, train_df, test_df
 
+=======
+    return data_train, data_test, label_train, label_test
+>>>>>>> a1e3d57d544fd06cc158fae9b683167c16b956b5

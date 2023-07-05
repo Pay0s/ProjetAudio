@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/56ffa2573c7742f3a199443bc3e0a2a0/artifacts
+end_time: 1688480032040
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 56ffa2573c7742f3a199443bc3e0a2a0
+run_name: hilarious-ray-985
+run_uuid: 56ffa2573c7742f3a199443bc3e0a2a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688480030169
+status: 4
+tags: []
+user_id: Utilisateur

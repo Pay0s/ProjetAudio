@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/06f09900d7354c87bcaf4cce59669a2b/artifacts
+end_time: 1688564203308
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 06f09900d7354c87bcaf4cce59669a2b
+run_name: receptive-tern-608
+run_uuid: 06f09900d7354c87bcaf4cce59669a2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688564162675
+status: 4
+tags: []
+user_id: paula

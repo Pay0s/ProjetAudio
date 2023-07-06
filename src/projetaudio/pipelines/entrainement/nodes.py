@@ -34,23 +34,23 @@ def template_model(input_shape, units=128, activation='relu', l2_value=0.01, dro
     x = layers.Dense(input_shape[0], activation='softmax')(x)
     # Création du modèle
     model = tf.keras.Model(inputs=inputs, outputs=x)
-    model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate), metrics=[tf.keras.metrics.CategoricalAccuracy()])
+    model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate), metrics=[tf.keras.metrics.CategoricalAccuracy()])
 
     return model
 
 def create_model(x_train, y_train, x_test, y_test):
 
+    #mlflow.set_tracking_uri('http://localhost:5000')
     mlflow.autolog()
 
     x_train = x_train.astype(int)
 
-    print('-------------------------------------------------')
-    print('-------------------------------------------------')
-    print(x_train.dtypes)
-    print(y_train)
-
     model = template_model((7,1))
 
     model.fit(x_train.values, y_train.values, epochs=10, validation_data=(x_test.values, y_test.values))
+
+    model.save("custom_model.keras")
+
+    mlflow.end_run(mlflow.entities.RunStatus.FAILED)
 
     return model

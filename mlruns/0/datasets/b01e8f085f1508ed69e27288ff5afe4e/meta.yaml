@@ -1,0 +1,11 @@
+digest: df739a02
+name: dataset
+profile: '{"features_shape": [56000, 7], "features_size": 392000, "features_nbytes":
+  1568000, "targets_shape": [56000, 14], "targets_size": 784000, "targets_nbytes":
+  6272000}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"int32\", \"shape\": [-1, 7]}}]", "targets": "[{\"type\": \"tensor\",
+  \"tensor-spec\": {\"dtype\": \"float64\", \"shape\": [-1, 14]}}]"}}'
+source: '{"tags": {"mlflow.user": "paula", "mlflow.source.name": "C:\\Users\\paula\\miniconda3\\Scripts\\kedro",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

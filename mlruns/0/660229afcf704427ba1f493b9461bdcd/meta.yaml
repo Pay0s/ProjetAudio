@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/660229afcf704427ba1f493b9461bdcd/artifacts
+end_time: 1688569053875
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 660229afcf704427ba1f493b9461bdcd
+run_name: luminous-crow-792
+run_uuid: 660229afcf704427ba1f493b9461bdcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688569000128
+status: 4
+tags: []
+user_id: paula

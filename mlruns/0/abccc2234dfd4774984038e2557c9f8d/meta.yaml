@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/abccc2234dfd4774984038e2557c9f8d/artifacts
+end_time: 1688565621481
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: abccc2234dfd4774984038e2557c9f8d
+run_name: nimble-wren-180
+run_uuid: abccc2234dfd4774984038e2557c9f8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688565575247
+status: 4
+tags: []
+user_id: paula

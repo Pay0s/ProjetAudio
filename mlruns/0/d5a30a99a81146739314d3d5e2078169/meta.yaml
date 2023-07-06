@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d5a30a99a81146739314d3d5e2078169/artifacts
+end_time: 1688574375435
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d5a30a99a81146739314d3d5e2078169
+run_name: sassy-mare-45
+run_uuid: d5a30a99a81146739314d3d5e2078169
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688574312952
+status: 4
+tags: []
+user_id: paula

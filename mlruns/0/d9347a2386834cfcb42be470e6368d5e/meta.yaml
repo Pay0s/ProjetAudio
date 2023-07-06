@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d9347a2386834cfcb42be470e6368d5e/artifacts
+end_time: 1688572830884
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d9347a2386834cfcb42be470e6368d5e
+run_name: honorable-fawn-631
+run_uuid: d9347a2386834cfcb42be470e6368d5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688572776816
+status: 4
+tags: []
+user_id: paula

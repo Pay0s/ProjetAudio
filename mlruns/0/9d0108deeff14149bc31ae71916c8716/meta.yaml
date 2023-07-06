@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/9d0108deeff14149bc31ae71916c8716/artifacts
+end_time: 1688634402524
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9d0108deeff14149bc31ae71916c8716
+run_name: dapper-koi-324
+run_uuid: 9d0108deeff14149bc31ae71916c8716
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688634345601
+status: 3
+tags: []
+user_id: paula

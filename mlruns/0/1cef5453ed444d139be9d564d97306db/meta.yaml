@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/1cef5453ed444d139be9d564d97306db/artifacts
+end_time: 1688641255387
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1cef5453ed444d139be9d564d97306db
+run_name: charming-lark-3
+run_uuid: 1cef5453ed444d139be9d564d97306db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688641146665
+status: 4
+tags: []
+user_id: paula

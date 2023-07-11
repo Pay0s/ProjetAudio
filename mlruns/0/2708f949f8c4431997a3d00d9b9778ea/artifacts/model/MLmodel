@@ -1,0 +1,27 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.10
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.0
+mlflow_version: 2.4.1
+model_uuid: 9c230ae7a40945e88de9d1cf42df88d6
+run_id: 2708f949f8c4431997a3d00d9b9778ea
+signature:
+  inputs: '[{"type": "double", "name": "before_exam_125_Hz"}, {"type": "double", "name":
+    "before_exam_250_Hz"}, {"type": "double", "name": "before_exam_500_Hz"}, {"type":
+    "double", "name": "before_exam_1000_Hz"}, {"type": "double", "name": "before_exam_2000_Hz"},
+    {"type": "double", "name": "before_exam_4000_Hz"}, {"type": "double", "name":
+    "before_exam_8000_Hz"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    7]}}]'
+utc_time_created: '2023-07-06 10:29:37.076585'

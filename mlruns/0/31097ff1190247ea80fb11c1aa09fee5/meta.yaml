@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/31097ff1190247ea80fb11c1aa09fee5/artifacts
+end_time: 1688656952235
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 31097ff1190247ea80fb11c1aa09fee5
+run_name: unleashed-shark-381
+run_uuid: 31097ff1190247ea80fb11c1aa09fee5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688656929625
+status: 3
+tags: []
+user_id: paula

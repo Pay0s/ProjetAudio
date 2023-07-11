@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/e19c56d1cb8b4dc98b02fb060878855c/artifacts
+end_time: 1688744367971
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e19c56d1cb8b4dc98b02fb060878855c
+run_name: traveling-shrew-262
+run_uuid: e19c56d1cb8b4dc98b02fb060878855c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688744345227
+status: 3
+tags: []
+user_id: paula

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/ee0b0009b2bb4bb5ba3a43dc82ca6870/artifacts
+end_time: 1688657311197
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ee0b0009b2bb4bb5ba3a43dc82ca6870
+run_name: burly-owl-771
+run_uuid: ee0b0009b2bb4bb5ba3a43dc82ca6870
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688657290222
+status: 3
+tags: []
+user_id: paula

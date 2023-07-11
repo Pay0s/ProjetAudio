@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/4cf86a4cf58c4ff78ac29a8cafb810d4/artifacts
+end_time: 1688737040286
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4cf86a4cf58c4ff78ac29a8cafb810d4
+run_name: luminous-bear-911
+run_uuid: 4cf86a4cf58c4ff78ac29a8cafb810d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688737025458
+status: 4
+tags: []
+user_id: paula

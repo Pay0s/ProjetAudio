@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/25c99aa22c514094a95266ca00e7b4aa/artifacts
+end_time: 1688744678752
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 25c99aa22c514094a95266ca00e7b4aa
+run_name: bemused-eel-887
+run_uuid: 25c99aa22c514094a95266ca00e7b4aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688744655994
+status: 3
+tags: []
+user_id: paula

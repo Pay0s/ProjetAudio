@@ -67,6 +67,21 @@ def normalize(df: pd.DataFrame) -> pd.DataFrame:
 
     return normalized_df
 
+# denormalize les lignes du dataframe
+def denormalize_data(df: pd.DataFrame) -> pd.DataFrame:
+
+    parameters_dataset = YAMLDataSet(filepath='conf/base/parameters.yml')
+
+    # Charge les valeurs minimales et maximales à partir du fichier parameters.yml
+    parameters = parameters_dataset.load()
+
+    min_value = parameters['min_value']
+    max_value = parameters['max_value']
+
+    # Applique la formule de dénormalisation à chaque cellule du DataFrame
+    denormalized_df = df * (max_value - min_value) + min_value
+
+    return denormalized_df.astype(int)
 
 def splitTrainTest (df: pd.DataFrame) -> pd.DataFrame:
 

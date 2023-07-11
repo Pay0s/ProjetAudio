@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/bf0c022a5af84d278aa57a9b92a074db/artifacts
+end_time: 1688659270124
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bf0c022a5af84d278aa57a9b92a074db
+run_name: salty-seal-480
+run_uuid: bf0c022a5af84d278aa57a9b92a074db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688659254874
+status: 4
+tags: []
+user_id: paula

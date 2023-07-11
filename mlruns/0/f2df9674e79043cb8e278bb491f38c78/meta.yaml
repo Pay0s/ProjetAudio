@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/f2df9674e79043cb8e278bb491f38c78/artifacts
+end_time: 1688656869015
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f2df9674e79043cb8e278bb491f38c78
+run_name: clean-midge-536
+run_uuid: f2df9674e79043cb8e278bb491f38c78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688656846291
+status: 3
+tags: []
+user_id: paula

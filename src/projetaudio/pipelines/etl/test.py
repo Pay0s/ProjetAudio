@@ -9,8 +9,7 @@ from sklearn.model_selection import train_test_split
 # Créer un DataFrame avec des entiers aléatoires
 df_split = pd.DataFrame(np.random.randint(0, 100, size=(5, 3)), columns=['after_1', 'before', 'after_2'])
 
-
-def test_answer():
+def test_answer():  #Verifie si les dataframes apres le traitement preprocess supprime bien les string et les lignes avec une valeurs vide
 
     data = {
     'Colonne1': [1, 2, 23],
@@ -37,16 +36,8 @@ def test_answer():
 
     assert are_equal == True
 
-def test_after():
-
-    data_train, data_test, train_df, test_df = splitTrainTest(df_split)
-    label_col = [col for col in train_df.columns if "after" in col]
-
-     #Verifier si label_col contient bien que les "after"
-    if label_col == 2:
-        return True
     
-def test_dataframe_creation():
+def test_dataframe_creation(): #Verifie que la fonction splitTrainTest split correctement les fichiers : nom de colonne et dimension du pourcentage
     # Créer un DataFrame de test avec des données et des étiquettes
     df = pd.DataFrame({'Colonne1': [1, 2, 3], 'Colonne2': [4, 5, 6], 'after_1': [7, 8, 9], 'after_2': [10, 11, 12]})
     

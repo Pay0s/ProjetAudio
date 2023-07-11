@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/3f5af686dde246b690ac530e68317286/artifacts
+end_time: 1688640899997
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3f5af686dde246b690ac530e68317286
+run_name: persistent-mole-421
+run_uuid: 3f5af686dde246b690ac530e68317286
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688640863761
+status: 3
+tags: []
+user_id: paula

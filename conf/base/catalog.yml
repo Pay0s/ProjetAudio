@@ -37,3 +37,29 @@ test_label:
     type: pandas.CSVDataSet
     filepath: data/03_primary/tonal_exam_test_label.csv
     layer: primary
+
+user_value_input:
+    type: pandas.CSVDataSet
+    filepath: data/05_model_input/value_user_input.csv
+    layer: model_input
+
+user_post_traitement:
+    type: pandas.CSVDataSet
+    filepath: data/05_model_input/user_post_traitement.csv
+    layer: model_input
+
+user_post_normalize:
+    type: pandas.CSVDataSet
+    filepath: data/05_model_input/user_post_normalize.csv
+    layer: model_input
+
+user_post_denormalize:
+    type: pandas.CSVDataSet
+    filepath: data/05_model_input/user_post_denormalize.csv
+    layer: model_input
+
+
+user_value_output:
+    type: pandas.CSVDataSet
+    filepath: data/05_model_input/value_user_output.csv
+    layer: model_output

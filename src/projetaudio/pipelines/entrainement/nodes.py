@@ -6,6 +6,8 @@ import mlflow
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers, regularizers
+from mlflow.models.signature import infer_signature
+
 
 
 
@@ -34,24 +36,25 @@ def template_model(input_shape, units=128, activation='relu', l2_value=0.01, dro
     x = layers.Dense(input_shape[0], activation='softmax')(x)
     # Création du modèle
     model = tf.keras.Model(inputs=inputs, outputs=x)
-    model.compile(loss='categorical_crossentropy', optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate), metrics=[tf.keras.metrics.CategoricalAccuracy()])
+    model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate), metrics=[tf.keras.metrics.CategoricalAccuracy()])
 
     return model
 
 def create_model(x_train, y_train, x_test, y_test):
     mlflow.autolog()
+    with mlflow.start_run() as run:
+        x_train = x_train.astype(int)
 
-    x_train = x_train.astype(int)
+        model = template_model((x_train.shape[1], 1))
 
-    model = template_model((x_train.shape[1], 1))
+        model.fit(x_train, y_train, epochs=1, validation_data=(x_test, y_test))
 
-    model.fit(x_train, y_train, epochs=10, validation_data=(x_test, y_test))
-
-    model.save("custom_model.keras")
-
-    mlflow.end_run(mlflow.entities.RunStatus.FAILED)
+        # Use the model to make predictions on the test dataset.
+        predictions = model.predict(x_test)
+        
+        print(predictions)
+        signature = infer_signature(x_test, predictions)
+        mlflow.sklearn.log_model(model, "model", signature=signature)
+        print("Run ID: {}".format(run.info.run_id))
 
     return model
-
-
-

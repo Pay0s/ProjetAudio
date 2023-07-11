@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/d5f849e09c354fed86871e63e32cb252/artifacts
+end_time: 1688654533234
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d5f849e09c354fed86871e63e32cb252
+run_name: delicate-penguin-381
+run_uuid: d5f849e09c354fed86871e63e32cb252
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688654512382
+status: 3
+tags: []
+user_id: paula

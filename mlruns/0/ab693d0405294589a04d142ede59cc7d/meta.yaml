@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/ab693d0405294589a04d142ede59cc7d/artifacts
+end_time: 1688655547307
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ab693d0405294589a04d142ede59cc7d
+run_name: rebellious-boar-432
+run_uuid: ab693d0405294589a04d142ede59cc7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688655525986
+status: 3
+tags: []
+user_id: paula

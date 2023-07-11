@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/c07ed593792941b480b33b2b0396179f/artifacts
+end_time: 1688641651703
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c07ed593792941b480b33b2b0396179f
+run_name: bright-bee-475
+run_uuid: c07ed593792941b480b33b2b0396179f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688641438765
+status: 3
+tags: []
+user_id: paula

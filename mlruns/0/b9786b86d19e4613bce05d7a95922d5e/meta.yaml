@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/paula/Documents/dev/Kedro/projetaudio/mlruns/0/b9786b86d19e4613bce05d7a95922d5e/artifacts
+end_time: 1688745007660
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b9786b86d19e4613bce05d7a95922d5e
+run_name: vaunted-ox-211
+run_uuid: b9786b86d19e4613bce05d7a95922d5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1688744985741
+status: 3
+tags: []
+user_id: paula

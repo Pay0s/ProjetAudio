@@ -1,0 +1,33 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 7, 1)]            0         
+                                                                 
+ conv1d (Conv1D)             (None, 5, 32)             128       
+                                                                 
+ max_pooling1d (MaxPooling1  (None, 2, 32)             0         
+ D)                                                              
+                                                                 
+ zero_padding1d (ZeroPaddin  (None, 4, 32)             0         
+ g1D)                                                            
+                                                                 
+ conv1d_1 (Conv1D)           (None, 2, 64)             6208      
+                                                                 
+ zero_padding1d_1 (ZeroPadd  (None, 4, 64)             0         
+ ing1D)                                                          
+                                                                 
+ max_pooling1d_1 (MaxPoolin  (None, 2, 64)             0         
+ g1D)                                                            
+                                                                 
+ flatten (Flatten)           (None, 128)               0         
+                                                                 
+ dense (Dense)               (None, 128)               16512     
+                                                                 
+ dense_1 (Dense)             (None, 7)                 903       
+                                                                 
+=================================================================
+Total params: 23751 (92.78 KB)
+Trainable params: 23751 (92.78 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
